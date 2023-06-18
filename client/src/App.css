@@ -2,14 +2,40 @@
   border: 1px black solid;
 } */
 
-.link-button {
-  background: none!important;
-  border: none;
-  padding: 0!important;
-  /*optional*/
-  font-family: arial, sans-serif;
-  /*input has OS specific font-family*/
-  color: rgb(125, 124, 124);
-  text-decoration: underline;
-  cursor: pointer;
+@import url('./fonts/font.css');
+
+/* INDEX */
+
+html, body {
+  background-color: #01a28c;
+  background-size: cover;
+  height: 100%;
 }
+
+#index-box {
+  padding-top: 10%;
+  /* background-color: #01a28c; */
+  /* background-color: #d2d2d2; */
+  /* box-shadow: 3px 3px rgb(220, 219, 219); */
+  /* border-radius: 10px; */
+}
+
+.title-logo {
+  font-family: 'GiverMade', Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: xx-large;
+}
+
+.header-subtitle {
+  color: white;
+}
+
+/* table {
+	display: table;
+}
+table tr td {
+	display: table-cell;
+}
+table tr {
+	display: block;
+} */

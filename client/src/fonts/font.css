@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'GiverMade'; 
+    src: local('GiverMade'),
+        url('./GiverMadeItalic-PKLJE.ttf') format('truetype'),
+        url('./GivermadeItalic-d9Vg7.otf') format('opentype');
+}

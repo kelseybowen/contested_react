@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { CookiesProvider } from 'react-cookie';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CookiesProvider>
+    <GoogleOAuthProvider clientId='416332037370-6s6hk3ng74ip1t6flp0idnsg39v9o97f.apps.googleusercontent.com'>
       <App />
-    </CookiesProvider>
+    </GoogleOAuthProvider>
   </React.StrictMode>
 );
 

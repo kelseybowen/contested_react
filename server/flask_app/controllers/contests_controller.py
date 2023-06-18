@@ -2,12 +2,15 @@ from flask_app import app
 from flask import render_template, request, redirect, session
 from flask_app.models import contest, item, category
 from flask_app.controllers import users_controller, ratings_controller, items_controller
+from utils import authenticate
 
 @app.route('/dashboard')
 def dashboard():
-    if "user_id" in session:
-        session["contest_name"] = ""
-        session["contest_description"] = ""
+    # add to all routes:
+    user_id = authenticate(request.headers.get('Authorization'))
+    if user_id:
+        # session["contest_name"] = ""
+        # session["contest_description"] = ""
         all_contests = contest.Contest.get_all_contests()
         return render_template("dashboard.html", all_contests=all_contests)
     else:
